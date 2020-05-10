@@ -526,3 +526,9 @@ margin: 20px auto;
   width: 250px;
   height: 250px;
 }
+
+.footer-line{
+    height:10px;
+    width: 100%;
+    border: 5px solid #000;
+}
