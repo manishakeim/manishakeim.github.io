@@ -1,0 +1,528 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+      font-family: 'CiscoSansTTRegular';
+      src: local('CiscoSansTTRegular'), url('../fonts/CiscoSansTTRegular.ttf') format("opentype");
+    }
+
+html, body {
+	height: 100%;
+}
+
+html {
+    height: 100%;
+    max-height: 100%;
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* ==========================================================================
+   Background Image
+   ========================================================================= */
+
+ .full {
+	background: url('../images/bb.jpg') no-repeat center center;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 5rem;
+    text-align: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Introduction
+   ========================================================================= */
+
+section {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: table;
+    margin-bottom: -5rem;
+    text-align: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+section .main-header-content{
+	width: 80%;
+}
+.content {
+		padding-top: 200px;
+    position: relative;
+    width: 90%;
+    max-width: 910px;
+    margin: 0 auto;
+}
+
+section::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 80%;
+	/*background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+	background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%); */
+}
+
+section .page-title-divider {
+    width: 50%;
+    margin: 20px auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+#exp .page-title-divider {
+    width: 50%;
+    margin: -10px auto 20px auto;
+    border-top: 1px solid #0094BC;
+}
+
+/* #section01 { background: url(../images/bg.png) center center / cover no-repeat;} */
+
+/* Scroll Down */
+ .demo a {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	z-index: 2;
+	display: inline-block;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	color: #fff;
+	font : normal 400 20px/1 'Josefin Sans', sans-serif;
+	letter-spacing: .1em;
+	text-decoration: none;
+	transition: opacity .3s;
+
+}
+.demo a:hover {
+	opacity: .5;
+}
+
+#section01 a {
+	padding-top: 60px;
+}
+
+#section01 a span {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 46px;
+	height: 46px;
+	margin-left: -23px;
+	border: 1px solid #fff;
+	border-radius: 100%;
+	box-sizing: border-box;
+}
+#section01 a span::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	content: '';
+	width: 16px;
+	height: 16px;
+	margin: -12px 0 0 -8px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	box-sizing: border-box;
+}
+
+.page-title{
+    margin: 70px 0 10px 0;
+    font-size: 5rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-family:'Josefin Sans' , "Open Sans", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.page-title-divider {
+    width: 50%;
+    margin: 20px auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.main-header .content {
+    width: 80%;
+}
+
+.page-description {
+    margin: 0;
+    font-size: 2.7rem;
+    line-height: 1.3em;
+    font-weight: 400;
+    font-family: 'Josefin Sans', "Open Sans", serif;
+    letter-spacing: 0.01rem;
+    color: #64E2F1;
+}
+
+.vertical {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* ==========================================================================
+   Social Icons
+   ========================================================================= */
+.social ul li a{
+        position: relative;
+		display: inline-block;
+        left: -40%;
+		min-width: 40px;
+		/* padding: 10px 0px;
+		margin: 0px 5px;*/
+		overflow: hidden;
+		text-align: center;
+		z-index: 2;
+
+}
+.social {
+    margin: 0;
+    padding: 0;
+}
+
+.social ul {
+    margin: 0;
+    padding: 5px;
+}
+
+.social ul li {
+    margin: 5px;
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.social i {
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+   border: 2px solid white;
+	/*color: #0099cc;*/
+    font-size: 22px;
+    text-align:center;
+    padding-top: 12px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social i:hover {
+    color: #FFF;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social .fa-facebook:hover { /* round facebook icon*/
+    background: #4060A5;
+}
+
+.social .fa-twitter:hover { /* round twitter icon*/
+    background: #00ABE3;
+}
+
+.social .fa-github:hover { /* round github icon*/
+    background: #343434;
+}
+
+.social .fa-linkedin:hover { /* round linkedin icon*/
+    background: #0094BC;
+}
+
+/* ==========================================================================
+   Animations
+   ========================================================================= */
+
+.full .page-title {
+    -webkit-animation: fade-in-down 0.6s;
+    animation: fade-in-down 0.6s;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.container-fluid .page-title {
+    -webkit-animation: fade-in-down 0.6s;
+    animation: fade-in-down 0.6s;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.full .page-title {
+    -webkit-animation: fade-in-down 0.6s;
+    animation: fade-in-down 0.6s;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.full .page-description {
+    -webkit-animation: fade-in-down 0.9s;
+    animation: fade-in-down 0.9s;
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+/* ==========================================================================
+   Professional Experience
+   ========================================================================= */
+
+.middle-grid {
+    margin: 0px;
+	padding:3em 0;
+	/* background:#44b76f; */
+	background: #ECE9E6;  /* fallback for old browsers */
+    	background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    	background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+         margin-bottom: -2rem;
+}
+
+.middle-grid .container {
+    font :  normal 400 15px/1 'Josefin Sans', sans-serif;
+}
+
+.middle-grid h3 {
+	color:#000000;
+	font-size:2.3em;
+	font-weight:700;
+}
+
+.date {
+	float:left;
+	width:13%;
+	margin-right:3%;
+	background: #00c6ff;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	/* box color */
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	-ms-border-radius: 6px;
+	padding:1.6em 0;
+	position:relative;
+}
+label.span1 {
+	height: 100px;
+	background: #00c6ff;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	/* line color */
+	position: absolute;
+	top: 141px;
+	left: 70px;
+}
+
+
+.event {
+	float:left;
+	width:84%;
+	border-bottom: 1px solid #00c6ff;
+	padding-bottom: 3em;
+}
+.date h5 {
+	color:#fff;
+	font-size:1.7em;
+	font-weight:600;
+}
+.date p {
+	color:#fff;
+	font-size:1.4em;
+	font-weight:300;
+	margin:0.5em ;
+}
+.event h4 {
+	color:#000000;
+	font-size:2.3em;
+	font-weight:600;
+	margin-bottom:0.5em;
+}
+.event h4 span {
+	font-weight:300;
+}
+.event p {
+	color:#000000;
+	font-size:1.47em;
+	font-weight:300;
+	line-height:2.2em;
+}
+.middle-section-grid {
+	margin-top: 4em;
+}
+.span_66{
+	border:none;
+}
+
+/* ==========================================================================
+   Voluntary Experience
+   ========================================================================= */
+.bg
+{
+  width: 100%;
+  z-index: 0;
+}
+.bottom-grid {
+     margin: 0px;
+	padding:3em 0;
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.bottom-grid .container {
+    font :  normal 400 15px/1 'Josefin Sans', sans-serif;
+}
+
+.bottom-grid h3 {
+	color:#000000;
+	font-size:1.9em;
+	font-weight:600;
+    padding-bottom: 20px;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    top:0;
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#exp{
+font :  normal 400 19px/1 'Josefin Sans', sans-serif;
+margin: 20px auto;
+}
+
+section .vertical {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.gap-right {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   Media Queries - Smaller than 900px
+   ========================================================================== */
+@media only screen and (max-width: 900px) {
+    .main-header {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: auto;
+        min-height: 240px;
+        height: 60vh;
+        padding: 15% 0;
+    }
+     .page-title {
+        font-size: 4rem;
+        letter-spacing: -1px;
+    }
+
+    .page-description {
+        font-size: 1.8rem;
+        line-height: 1.5em;
+    }
+
+    #exp{
+font :  normal 400 15px/1 'Josefin Sans', sans-serif;
+margin: 20px auto;
+}
+}
+
+/* ==========================================================================
+   Media Queries - Smaller than 500px
+   ========================================================================= */
+   @media only screen and (max-width: 500px) {
+
+    .page-title {
+        font-size: 3rem;
+    }
+ .page-description {
+        font-size: 1.6rem;
+    }
+
+    #exp{
+font :  normal 400 15px/1 'Josefin Sans', sans-serif;
+margin: 20px auto;
+}
+
+   }
+
+@-webkit-keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================= */
+
+.footer{
+    font :  normal 400 15px/1 'Josefin Sans', sans-serif;
+	padding:3em 0;
+}
+
+.copyrights p {
+	color: #000;
+	font-size: 1.2em;
+	font-weight: 400;
+}
+.copyrights p a {
+	text-decoration:underline;
+}
+
+.ceh {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 250px;
+}
