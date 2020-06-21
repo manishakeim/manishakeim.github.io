@@ -309,6 +309,12 @@ section .page-title-divider {
 	font-weight:700;
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
 .date {
 	float:left;
 	width:13%;
@@ -519,13 +525,13 @@ margin: 20px auto;
 	text-decoration:underline;
 }
 
-.ceh {
+/* .ceh {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 250px;
   height: 250px;
-}
+} */
 
 .footer-line{
     height:10px;
