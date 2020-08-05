@@ -533,6 +533,10 @@ margin: 20px auto;
   height: 250px;
 } */
 
+.devnet{
+	padding-top: 25px;
+}
+
 .footer-line{
     height:10px;
     width: 100%;
