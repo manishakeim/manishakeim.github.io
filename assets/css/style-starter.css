@@ -11064,6 +11064,10 @@ body:after {
   width: 60px;
   border-radius: 50%; } */
 
+.w3l-testimonials.research{
+  background: whitesmoke;
+}
+
 .w3l-testimonials .customers-6-content h3.card-title {
   font-size: 18px;
   line-height: 24px;
