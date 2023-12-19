@@ -7798,6 +7798,10 @@ button.bg-dark:focus {
 .float-none {
   float: none !important; }
 
+a{
+  color: var(--opposite-color);
+}
+
 @media (min-width: 576px) {
   .float-sm-left {
     float: left !important; }
@@ -9869,7 +9873,7 @@ h4.sub-title {
 
 .w3l-bootstrap-header .navbar-light .navbar-nav .nav-link {
   color: var(--white-color);
-  text-transform: capitalize; }
+  }
 
 .w3l-bootstrap-header li.nav-item {
   margin: 0px 10px; }
@@ -10434,7 +10438,7 @@ h4.sub-title {
   -ms-transition: 0.3s ease-in; }
 
 .w3l-main-banner .banner-view {
-  background: url(../images/back.webp) no-repeat right;
+  background: url(../images/leaf.jpg) no-repeat right;
   background-size: cover;
   min-height: 100vh;
   position: relative;
