@@ -1,9 +1,10 @@
 const timelineData = [
   {
     date: "Mar 2026",
-    text: "Paper accepted at ICWSM'26: <i>Measuring the Semantic Structure and Evolution of Conspiracy Theories</i>",
+    text: "Paper accepted at ICWSM'26 (20th International AAAI Conference on Web and Social Media): <i>Measuring the Semantic Structure and Evolution of Conspiracy Theories</i>.",
     links: [
-      { label: "ICWSM'26", href: "https://www.icwsm.org/2026/index.html" }
+      { label: "Paper", href: "https://doi.org/10.1609/icwsm.v20i1.42690" },
+      { label: "Poster", href: "assets/documents/CT_Poster.pdf" }
     ]
   },
   {
@@ -86,10 +87,10 @@ if (timelineContainer) {
     .map((item) => {
       const iconFor = (label) => {
         const lower = label.toLowerCase();
-        if (lower.includes("presentation") || lower.includes("slides")) {
+        if (lower.includes("presentation") || lower.includes("slides")|| lower.includes("poster")) {
           return "assets/images/ppt.png";
         }
-        if (lower.includes("report") || lower.includes("pdf")) {
+        if (lower.includes("report") || lower.includes("pdf") || lower.includes("paper")) {
           return "assets/images/pdf.png";
         }
         return "";
