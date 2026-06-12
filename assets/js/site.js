@@ -4,7 +4,8 @@ const timelineData = [
     text: "Paper accepted at ICWSM'26 (20th International AAAI Conference on Web and Social Media): <i>Measuring the Semantic Structure and Evolution of Conspiracy Theories</i>.",
     links: [
       { label: "Paper", href: "https://doi.org/10.1609/icwsm.v20i1.42690" },
-      { label: "Poster", href: "assets/documents/CT_Poster.pdf" }
+      { label: "Poster", href: "assets/documents/CT_Poster.pdf" },
+      { label: "Dashboard", href: "http://obelix.cs.uiowa.edu:8504/RQ1_Neighboring_Words"}
     ]
   },
   {
